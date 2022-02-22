@@ -5,7 +5,7 @@
         </div>
         <nav>
             <ul class="navbar">
-                <li class="active" v-for="link in links" :key="link.text">
+                <li v-for="(link) in links" :key="link.text">
                     {{link.text}}
                 </li>
             </ul>
@@ -17,6 +17,7 @@
 export default {
     data() {
         return {
+            active: 0,
             links: [
                 {
                     text: 'CHARACTERS'
@@ -65,6 +66,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     max-width: 1180px;
+    min-width: 968px;
     .logo {
         height: 100%;
         img {
@@ -77,7 +79,15 @@ header {
             list-style: none;
             li {
                 display: inline-block;
-                padding: 0 10px;
+                margin: 0 10px;
+                padding: 15px 0;
+                &:hover {
+                    background-color: lightgray;
+                    cursor: pointer;
+                }
+            }
+            .active {
+                border-bottom: 2px solid $primaryColor;
             }
         }
     }

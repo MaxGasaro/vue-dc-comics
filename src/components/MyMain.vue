@@ -17,6 +17,8 @@ export default {
 main {
     height: 200px;
     background-color: $mainColor;
+    display: flex;
+    align-items: center;
     h1 {
         color: $textColor;
     }

@@ -26,6 +26,6 @@ export default {
 
 <style lang="scss">
 #app {
- 
+  /*@import "./assets/style/general.scss";*/
 }
 </style>

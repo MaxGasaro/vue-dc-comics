@@ -62,7 +62,7 @@ export default {
 @import "../assets/style/variables.scss";
 
     footer {
-        height: 500px;
+        height: 400px;
         background-image: url('../assets/img/footer-bg.jpg');
         display: flex;
         ul {
