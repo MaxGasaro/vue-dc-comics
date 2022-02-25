@@ -5,11 +5,14 @@
             <li v-for="link in links" :key="link.text">
                 {{link.text}}
             </li>
+            <!--
             <li class="list-title">SHOP</li> 
             <li v-for="link in links" :key="link.text">
                 {{link.text}}
             </li>
+            -->
         </ul>
+        <!--
         <ul>
             <li class="list-title">DC</li> 
             <li v-for="link in links" :key="link.text">
@@ -22,6 +25,7 @@
                 {{link.text}}
             </li>
         </ul>
+        -->
     </footer>
 </template>
 
